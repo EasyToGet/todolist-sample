@@ -1,0 +1,120 @@
+{
+	"info": {
+		"_postman_id": "3f78d631-b3db-408e-8a3a-235fcd780d5c",
+		"name": "todolist - heroku",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "取得所以代辦",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://rocky-shore-26597.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"rocky-shore-26597",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "新增所以代辦",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"今晚刷牙沒3\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://rocky-shore-26597.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"rocky-shore-26597",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除所以代辦",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://rocky-shore-26597.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"rocky-shore-26597",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除單筆代辦",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://rocky-shore-26597.herokuapp.com/todos/d603de50-c52b-4dd0-b0bf-cfd054c96d34",
+					"protocol": "https",
+					"host": [
+						"rocky-shore-26597",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos",
+						"d603de50-c52b-4dd0-b0bf-cfd054c96d34"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "編輯單筆代辦",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "https://rocky-shore-26597.herokuapp.com/todos/",
+					"protocol": "https",
+					"host": [
+						"rocky-shore-26597",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
