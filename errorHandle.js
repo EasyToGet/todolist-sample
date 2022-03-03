@@ -5,7 +5,7 @@ function errorHandle(res) {
     'Access-Control-Allow-Methods': 'PATCH, POST, GET,OPTIONS,DELETE',
     'Content-Type': 'application/json'
   };
-  res.writeHeader(404, headers);
+  res.writeHeader(400, headers);
   res.write(JSON.stringify({
     "status": "false",
     "message": "欄位未填寫正確，或無此 todo id",
